@@ -1,0 +1,54 @@
+1.0: First version
+1.02beta: Multiple monitor support
+1.2beta: 10.5 (Leopard) support
+1.3beta: Retain hotkey across sessions (regression in 1.2beta). Improved multi-screen support
+1.4beta: BETA - Improve ability to set hotkeys on Leopard; untested on Tiger
+1.4beta2: (Hopefully) fix bug with isolation and cmd-tab
+1.4beta3: As 1.4beta2 was intended to be
+1.4beta4: Menu item is now optional. Also left-click now optionally toggles isolate mode.
+1.4beta5: Fix bug where last active app would be ignored when isolate mode is switched on
+1.4beta6: Make hiding of other app's windows optional -- see Preferences window
+1.4beta7: Fix menu icon behaviour, broken in 1.4beta6
+1.4beta8: Better handling of Finder
+1.4beta9: No new features. Icon tweaked, memory leaks fixed, various invisible code improvements
+1.5beta1: Sparkle support for automatic updates
+1.5beta2: Newer version of Sparkle, drastically slimmed
+1.5beta3: Fix menubar highlight remaining after right-click
+1.5beta4: No longer fails to isolate slow-moving applications on app-switch
+1.5beta5: Add hidden prefs for alternate hotkey
+1.5beta6: Add ability to hide the dock and to check for updates within the Preferences window. Add hidden preferences for preference window hotkey.
+3.0: Fix memory leaks
+3.1beta: Add ability to blur background windows
+3.2: Enable blurring of background windows as well as (or instead of) covering them up
+3.3: Restore compatibility with OS X 10.4 (Tiger)
+3.31beta: Ensure that 'Check for updates' box always comes to the front, preventing greyed-out menu items. Fix minor logic problem with Dock hiding.
+3.32beta: Experimental support for new ways to obscure background windows -- pointillize, crystallize, bloom
+3.33beta: Improve login item code
+3.34beta: Better interactions with Spaces and Expose.
+3.35beta: Option to suspend Isolator when the Finder is frontmost (allows you to see desktop icons when using the Finder)
+3.36beta: Better window effects and compositing
+3.37beta: Bring back the bloom effect
+3.38beta: Remove glitchy hexagons effect; disable filters on machines without hardware CoreImage acceleration
+3.39beta: Fix problems on PPC/10.5.3.
+3.40beta: Code tidying; added informative floating window on first run
+3.41beta: Fix localization and ability to detect changes to screen configuration
+3.42beta: Sparkle update
+3.43beta: Smoother transitions; fewer glitches
+3.44beta: Sparkle test
+3.45beta: Codesign
+3.46beta: Fix filter glitches (mode 0x2001; remove pixellate -- still available through hidden pref)
+3.47beta: Fix 'no filter' option
+3.48beta: Multiple minor fixes
+4.0: Added blur and other effects to background windows; suspend Isolator when Finder is frontmost; multiple bug fixes.
+4.02beta: Update for Snow Leopard; add desaturate effect
+4.03beta: Fix glitch with selection of desaturate filter
+4.04beta: unreleased
+4.1beta: Snow Leopard support, desaturate filter
+4.2: Snow Leopard support, desaturate filter
+4.3: Fix Sparkle problems. NB This version is not compatible with OS X 10.4 -- I hope the next version will be.
+4.4: Fix auto-update problems. NB This version is not compatible with 10.4 -- hopefully the next version will be.
+4.5beta: Reenable 10.4 support.
+4.74beta: Applescript support, fix bug when hiding only on main screen
+4.75beta: Fix code signing
+4.76beta: Fix code signing
+4.9beta: Update for Lion

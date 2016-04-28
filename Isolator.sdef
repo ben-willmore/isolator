@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Dictionary">
+	<suite name="Suite" code="Isol" description="Isolator scripting">
+		<class name="application" code="IsAp" inherits="NSCoreSuite.NSApplication">
+			<cocoa class="NSApplication"/>
+			<property name="active" code="IsAc" description="Is Isolator active" type="boolean">
+				<cocoa key="active"/>
+			</property>
+		</class>
+	</suite>
+</dictionary>

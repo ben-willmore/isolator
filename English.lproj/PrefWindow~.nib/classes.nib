@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {setBackgroundColor = id; setClickThrough = id; setOpacity = id; }; 
+            CLASS = IsoController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefWindow = NSWindow; shortcutRecorder = SRRecorderControl; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            CLASS = SRRecorderControl; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSControl; 
+        }, 
+        {
+            CLASS = ShortcutRecorder; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSControl; 
+        }
+    ); 
+    IBVersion = 1; 
+}
