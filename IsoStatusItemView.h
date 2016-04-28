@@ -3,7 +3,7 @@
 //  Isolator
 //
 //  Created by Ben Willmore on 06/03/2008.
-//  Copyright 2008 __MyCompanyName__. All rights reserved.
+//  Copyright 2008 Ben Willmore. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

@@ -3,7 +3,7 @@
 //  Isolator
 //
 //  Created by Ben Willmore on 09/02/2007.
-//  Copyright 2007 __MyCompanyName__. All rights reserved.
+//  Copyright 2007 Ben Willmore. All rights reserved.
 //
 
 #import "BlackView.h"
