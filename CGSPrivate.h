@@ -211,3 +211,7 @@ extern void *CGSReleaseGenericObj(void*);
 extern OSStatus CGSNewConnection(const void **attr, CGSConnection *id);
 typedef int CGSCIFilterID;
 
+// Added BW 2016
+extern OSStatus CGSSetWindowBackgroundBlurRadius(CGSConnection connection, NSInteger   windowNumber, int radius);
+extern CGSConnection CGSDefaultConnectionForThread();
+

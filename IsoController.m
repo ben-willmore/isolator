@@ -3,7 +3,7 @@
 //  Isolator
 //
 //  Created by Ben Willmore on 08/02/2007.
-//  Copyright 2007 __MyCompanyName__. All rights reserved.
+//  Copyright 2007 Ben Willmore. All rights reserved.
 //
 
 #import "Carbon/Carbon.h"
@@ -24,6 +24,18 @@
 
 #ifndef NSAppKitVersionNumber10_7
     #define NSAppKitVersionNumber10_7 1138
+#endif
+
+#ifndef NSAppKitVersionNumber10_8
+    #define NSAppKitVersionNumber10_8 1187
+#endif
+
+#ifndef NSAppKitVersionNumber10_9
+    #define NSAppKitVersionNumber10_9 1265
+#endif
+
+#ifndef NSAppKitVersionNumber10_10
+    #define NSAppKitVersionNumber10_10 1343
 #endif
 
 @implementation IsoController
@@ -80,7 +92,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 	savedFrames = nil;
 	lastAppActivated = nil;
 	
-	//sparkleUpdater = [[SUUpdater alloc] init];
+	sparkleUpdater = [[SUUpdater alloc] init];
 
 	// register for Carbon event on app switching
     me = self;
@@ -1160,7 +1172,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 
 -(void) dealloc
 {
-	//[sparkleUpdater release];
+	[sparkleUpdater release];
 	[startupItemController release];
 	[blackWindows release];
 	[statusMenu release];
