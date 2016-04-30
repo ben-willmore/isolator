@@ -21,6 +21,10 @@ const NSTimeInterval kMinFadeRepeatTime= 0.01;
 	#define kHIWindowVisibleInAllSpaces 1 << 8
 #endif
 
+#ifndef NSAppKitVersionNumber10_8
+    #define NSAppKitVersionNumber10_8 1187
+#endif
+
 @implementation BlackWindow
 
 - (id)initWithFrame:(NSRect)frame
@@ -87,7 +91,9 @@ const NSTimeInterval kMinFadeRepeatTime= 0.01;
 	NSString* filterName;
 	
 	// remove any existing filter
-	CGSCIFilterID oldFilter = 0;
+    CGSSetWindowBackgroundBlurRadius(connection, [self windowNumber], 0);
+
+    CGSCIFilterID oldFilter = 0;
 	
 	if (filter) {
 		//CGSRemoveWindowFilter(connection, [self windowNumber], filter);
@@ -117,10 +123,15 @@ const NSTimeInterval kMinFadeRepeatTime= 0.01;
 		return;
 	}
 	else if (filterType==1) {
-		filterName = @"CIGaussianBlur";
-		optionNames = [NSArray arrayWithObjects:@"inputRadius", nil];
-		optionVals  = [NSArray arrayWithObjects:[NSNumber numberWithFloat:paramVal*fraction], nil];
-	}
+        if ((floor(NSAppKitVersionNumber) < NSAppKitVersionNumber10_8)) {
+            filterName = @"CIGaussianBlur";
+            optionNames = [NSArray arrayWithObjects:@"inputRadius", nil];
+            optionVals  = [NSArray arrayWithObjects:[NSNumber numberWithFloat:paramVal*fraction], nil];
+        }
+        else {
+            CGSSetWindowBackgroundBlurRadius(connection, [self windowNumber], (paramVal+1)*fraction);
+        }
+    }
 	else if (filterType==2) {
 		filterName = @"CIBloom";
 		if ([defaults boolForKey:@"RunningOnSnowLeopard"]) {

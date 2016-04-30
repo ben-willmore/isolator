@@ -26,6 +26,18 @@
     #define NSAppKitVersionNumber10_7 1138
 #endif
 
+#ifndef NSAppKitVersionNumber10_8
+    #define NSAppKitVersionNumber10_8 1187
+#endif
+
+#ifndef NSAppKitVersionNumber10_9
+    #define NSAppKitVersionNumber10_9 1265
+#endif
+
+#ifndef NSAppKitVersionNumber10_10
+    #define NSAppKitVersionNumber10_10 1343
+#endif
+
 @implementation IsoController
 
 static int kAppSwitched = 1;
