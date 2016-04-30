@@ -3,7 +3,7 @@
 //  Isolator
 //
 //  Created by Ben Willmore on 08/02/2007.
-//  Copyright 2007 Ben Willmore. All rights reserved.
+//  Copyright 2007 __MyCompanyName__. All rights reserved.
 //
 
 #import "Carbon/Carbon.h"
@@ -227,7 +227,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 	
 	[self setupAppleScripts];
 	
-	infoBox = nil;
+	//infoBox = nil;
 	
 	return self;
 }
@@ -293,7 +293,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 	if (![defaults boolForKey:@"InfoBoxHasBeenShown"]) {
 		theFrame = [[siView window] frame];
 		NSPoint pt = NSMakePoint(NSMidX(theFrame), NSMinY(theFrame));
-		[self showInfoBoxAtPoint:pt];
+		//[self showInfoBoxAtPoint:pt];
 	}
 }
 
@@ -989,7 +989,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 
 	NSDictionary** errorInfo;
 	NSAppleEventDescriptor* result;
-	if (result = [getDockAutohideScript executeAndReturnError:errorInfo])
+	if ((result = [getDockAutohideScript executeAndReturnError:errorInfo]))
 		dockAutohide = [result booleanValue];
 }
 
@@ -1008,7 +1008,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 	
 	NSDictionary** errorInfo;
 	NSAppleEventDescriptor* result;
-	if (result = [getDockAutohideScript executeAndReturnError:errorInfo]) {
+	if ((result = [getDockAutohideScript executeAndReturnError:errorInfo])) {
 		return [result booleanValue];
 	}
 	else {
@@ -1108,43 +1108,43 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 	[defaults setInteger:filterIdx forKey:@"BackgroundFilterType"];
 }
 
--(void) showInfoBoxAtPoint:(NSPoint)pt
-{
-	if (infoBox) {
-		// it's already open?!
-		return;
-	}
-	//NSLog(@"%@ %@ %5.2f %5.2f", infoBoxView, infoBoxTextField,pt.x,pt.y);
-
-	infoBox = [[MAAttachedWindow alloc] initWithView:infoBoxView 
-									 attachedToPoint:pt 
-											inWindow:nil 
-											  onSide:MAPositionBottom 
-										  atDistance:24.0];
-	[infoBoxTextField setTextColor:[infoBox borderColor]];
-	//[infoBoxTextField setStringValue:@"Your text goes here..."];
-	[NSApp activateIgnoringOtherApps:YES];
-	[infoBox makeKeyAndOrderFront:self];
-	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-	[defaults setBool:YES forKey:@"InfoBoxHasBeenShown"];
-	[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(closeInfoBox:) userInfo:nil repeats:NO];
-}
-
--(void)closeInfoBox:(id)sender
-{
-	[infoBox orderOut:self];
-	[infoBox release];
-	infoBox = nil;
-}
-
-- (BOOL)application:(NSApplication *)sender delegateHandlesKey:(NSString *)key
-{
-    if ([key isEqual:@"active"]) {
-        return YES;
-    } else {
-        return NO;
-    }
-}
+//-(void) showInfoBoxAtPoint:(NSPoint)pt
+//{
+//	if (infoBox) {
+//		// it's already open?!
+//		return;
+//	}
+//	//NSLog(@"%@ %@ %5.2f %5.2f", infoBoxView, infoBoxTextField,pt.x,pt.y);
+//
+//	infoBox = [[MAAttachedWindow alloc] initWithView:infoBoxView 
+//									 attachedToPoint:pt 
+//											inWindow:nil 
+//											  onSide:MAPositionBottom 
+//										  atDistance:24.0];
+//	[infoBoxTextField setTextColor:[infoBox borderColor]];
+//	//[infoBoxTextField setStringValue:@"Your text goes here..."];
+//	[NSApp activateIgnoringOtherApps:YES];
+//	[infoBox makeKeyAndOrderFront:self];
+//	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+//	[defaults setBool:YES forKey:@"InfoBoxHasBeenShown"];
+//	[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(closeInfoBox:) userInfo:nil repeats:NO];
+//}
+//
+//-(void)closeInfoBox:(id)sender
+//{
+//	[infoBox orderOut:self];
+//	[infoBox release];
+//	infoBox = nil;
+//}
+//
+//- (BOOL)application:(NSApplication *)sender delegateHandlesKey:(NSString *)key
+//{
+//    if ([key isEqual:@"active"]) {
+//        return YES;
+//    } else {
+//        return NO;
+//    }
+//}
 
 - (void)setActive:(NSNumber *)activate
 {
@@ -1176,7 +1176,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 	[setDockAutohideFalseScript release];
 	
 	[savedFrames release];
-	[infoBox release];
+	//[infoBox release];
 	[super dealloc];
 }
 

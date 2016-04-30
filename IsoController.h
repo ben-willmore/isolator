@@ -3,7 +3,7 @@
 //  Isolator
 //
 //  Created by Ben Willmore on 08/02/2007.
-//  Copyright 2007 Ben Willmore. All rights reserved.
+//  Copyright 2007 __MyCompanyName__. All rights reserved.
 //
 
 #import "Cocoa/Cocoa.h"
@@ -15,7 +15,7 @@
 #import "BlackView.h"
 #import "LessThanAboutOne.h"
 #import "IsoStatusItemView.h"
-#import "MAAttachedWindow.h"
+//#import "MAAttachedWindow.h"
 
 @interface IsoController : NSObject
 {
@@ -49,9 +49,9 @@
 	NSArray* savedFrames;
 	NSDictionary* lastAppActivated;
 
-	MAAttachedWindow* infoBox;
-	IBOutlet NSView* infoBoxView;
-	IBOutlet NSTextField* infoBoxTextField;
+	//MAAttachedWindow* infoBox;
+	//IBOutlet NSView* infoBoxView;
+	//IBOutlet NSTextField* infoBoxTextField;
 
 }
 
@@ -104,8 +104,8 @@
 -(IBAction) checkForUpdates:(id)sender;
 -(void)bringWindowsForward;
 -(void) migratePrefsTo338;
--(void) showInfoBoxAtPoint:(NSPoint)pt;
--(void)closeInfoBox:(id)sender;
+//-(void) showInfoBoxAtPoint:(NSPoint)pt;
+//-(void)closeInfoBox:(id)sender;
 
 
 @end

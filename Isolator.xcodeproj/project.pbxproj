@@ -21,7 +21,6 @@
 		B567340E0F3B9E2D00013FF6 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = B567340D0F3B9E2D00013FF6 /* MainMenu.nib */; };
 		B56DD7E50B7B6CA000F54D25 /* IsoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56DD7E40B7B6CA000F54D25 /* IsoController.m */; };
 		B56DD8800B7B748400F54D25 /* BlackView.m in Sources */ = {isa = PBXBuildFile; fileRef = B56DD87F0B7B748400F54D25 /* BlackView.m */; };
-		B58F21FD0DFFFE4E0068ABC0 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B58F21FC0DFFFE4E0068ABC0 /* MAAttachedWindow.m */; };
 		B5AD1E1B0B7B8230001936BA /* Isolator.icns in Resources */ = {isa = PBXBuildFile; fileRef = B5AD1E1A0B7B8230001936BA /* Isolator.icns */; };
 		B5B9A5800B809F7D00C585B8 /* LoginItemsAE.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B9A57E0B809F7D00C585B8 /* LoginItemsAE.c */; };
 		B5B9A5CA0B80A16C00C585B8 /* StartupItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B9A5C80B80A16C00C585B8 /* StartupItemController.m */; };
@@ -75,8 +74,6 @@
 		B56DD7E40B7B6CA000F54D25 /* IsoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsoController.m; sourceTree = "<group>"; };
 		B56DD87E0B7B748400F54D25 /* BlackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackView.h; sourceTree = "<group>"; };
 		B56DD87F0B7B748400F54D25 /* BlackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackView.m; sourceTree = "<group>"; };
-		B58F21FB0DFFFE4E0068ABC0 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
-		B58F21FC0DFFFE4E0068ABC0 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		B5AD1E1A0B7B8230001936BA /* Isolator.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Isolator.icns; sourceTree = "<group>"; };
 		B5B9A57E0B809F7D00C585B8 /* LoginItemsAE.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = LoginItemsAE.c; path = LoginItemsAE/LoginItemsAE.c; sourceTree = "<group>"; };
 		B5B9A57F0B809F7D00C585B8 /* LoginItemsAE.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LoginItemsAE.h; path = LoginItemsAE/LoginItemsAE.h; sourceTree = "<group>"; };
@@ -133,8 +130,6 @@
 				B56DD7E40B7B6CA000F54D25 /* IsoController.m */,
 				B5120F930D806E2C00BA8F30 /* IsoStatusItemView.h */,
 				B5120F940D806E2C00BA8F30 /* IsoStatusItemView.m */,
-				B58F21FB0DFFFE4E0068ABC0 /* MAAttachedWindow.h */,
-				B58F21FC0DFFFE4E0068ABC0 /* MAAttachedWindow.m */,
 				B55AD1AC0B821F3000F928D1 /* credits.html */,
 				B5B9A5C70B80A16C00C585B8 /* StartupItemController.h */,
 				B5B9A5C80B80A16C00C585B8 /* StartupItemController.m */,
@@ -322,7 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/Developer/usr/bin/sdp -f st -o $BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Resources/ $SOURCE_ROOT/Isolator.sdef\nln -sf \"$BUILD_DIR\" \"$SOURCE_ROOT\"/build";
+			shellScript = "/Applications/Xcode.app/Contents/Developer/usr/bin/sdp -f st -o $BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Resources/ $SOURCE_ROOT/Isolator.sdef\nln -sf \"$BUILD_DIR\" \"$SOURCE_ROOT\"/build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -345,7 +340,6 @@
 				B5B9A5CA0B80A16C00C585B8 /* StartupItemController.m in Sources */,
 				B5D7C5FF0B81B1E000C97DFA /* LessThanAboutOne.m in Sources */,
 				B5120F950D806E2C00BA8F30 /* IsoStatusItemView.m in Sources */,
-				B58F21FD0DFFFE4E0068ABC0 /* MAAttachedWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
