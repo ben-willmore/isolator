@@ -183,7 +183,7 @@
                             <tabViewItem label="Menu icon" identifier="Item 2" id="563">
                                 <view key="view" id="564">
                                     <rect key="frame" x="10" y="33" width="427" height="328"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" id="588">
                                             <rect key="frame" x="91" y="223" width="245" height="59"/>
@@ -463,7 +463,7 @@
                             <tabViewItem label="Updates" identifier="Item 3" id="619">
                                 <view key="view" id="620">
                                     <rect key="frame" x="10" y="33" width="427" height="328"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button id="621">
                                             <rect key="frame" x="29" y="254" width="326" height="18"/>

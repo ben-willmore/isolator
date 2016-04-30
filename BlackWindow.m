@@ -129,7 +129,7 @@ const NSTimeInterval kMinFadeRepeatTime= 0.01;
             optionVals  = [NSArray arrayWithObjects:[NSNumber numberWithFloat:paramVal*fraction], nil];
         }
         else {
-            CGSSetWindowBackgroundBlurRadius(connection, [self windowNumber], (paramVal+1)*fraction);
+            CGSSetWindowBackgroundBlurRadius(connection, [self windowNumber], paramVal+1);
         }
     }
 	else if (filterType==2) {
