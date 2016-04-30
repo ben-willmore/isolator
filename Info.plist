@@ -11,17 +11,27 @@
 	<key>CFBundleIconFile</key>
 	<string>Isolator.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>eu.willmore.isolator</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>Isolator</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>willmore.eu</key>
+			<string>0</string>
+		</dict>
+	</dict>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>4.76beta</string>
+	<string>4.99beta</string>
 	<key>CFBundleDisplayName</key>
 	<string>Isolator</string>
 	<key>LSUIElement</key>
