@@ -857,24 +857,24 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 
 -(void)setUpdatesIncludeBetaVersions:(BOOL)flag
 {
-//	if (flag)
-//		[sparkleUpdater setFeedURL:[NSURL URLWithString:kBetaFeedURL]];
-//	else
-//		[sparkleUpdater setFeedURL:[NSURL URLWithString:kReleaseFeedURL]];
+	if (flag)
+		[sparkleUpdater setFeedURL:[NSURL URLWithString:kBetaFeedURL]];
+	else
+		[sparkleUpdater setFeedURL:[NSURL URLWithString:kReleaseFeedURL]];
 }
 
 -(BOOL)updatesIncludeBetaVersions
 {
-//	if ([[sparkleUpdater feedURL] isEqual:[NSURL URLWithString:kBetaFeedURL]])
-//		return YES;
-//	else
-//		return NO;
+	if ([[sparkleUpdater feedURL] isEqual:[NSURL URLWithString:kBetaFeedURL]])
+		return YES;
+	else
+		return NO;
 }
 
 -(void) setNilValueForKey:(NSString *)theKey;
 {
-//    if ([theKey isEqualToString:@"updatesIncludeBetaVersions"])
-//		[sparkleUpdater setFeedURL:[NSURL URLWithString:kReleaseFeedURL]];
+    if ([theKey isEqualToString:@"updatesIncludeBetaVersions"])
+		[sparkleUpdater setFeedURL:[NSURL URLWithString:kReleaseFeedURL]];
 }
 
 -(IBAction)setWindow:(id)sender
@@ -1172,7 +1172,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 
 -(void) dealloc
 {
-	//[sparkleUpdater release];
+	[sparkleUpdater release];
 	[startupItemController release];
 	[blackWindows release];
 	[statusMenu release];

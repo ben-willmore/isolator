@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/>
+<title>Isolator</title>
+<link type="text/css" rel="stylesheet" href="@@SHAREDIR@@/style.css"/>
+
+<link rel="alternate" type="application/rss+xml" 
+   href="@@WEBROOT@@/software/isolator/releases.xml"
+   title="New versions of Isolator (RSS)"/>
+</head>
+<body>
+
+<!--#include virtual="@@SHAREDIR@@/shared-header.html"--> 
+
+<h1>Isolator</h1>
+
+<p align="center">
+<a href="@@IMGDIR@@/isolator-slab.png"> <img
+src="@@IMGDIR@@/isolator-slab.png" style="float: right; margin-left: 1em;"
+border="0" width="50%" alt="Screenshot with plain background"/></a>
+<a href="@@IMGDIR@@/isolator-blur.png"> <img
+src="@@IMGDIR@@/isolator-blur.png" style="float: right; margin-left: 1em;"
+border="0" width="50%" alt="Screenshot with blurred background"/></a></p>
+
+
+<p>Isolator is a small menu bar application that helps you concentrate.  When
+  you're working on a document, and don't want to be distracted, turn on
+  Isolator. It will cover up your desktop and all the icons on it, as well as
+  the windows of all your other applications, so you can
+  concentrate on the task in hand.</p>
+
+<p>Isolator is designed to stay out of your way, and so it isn't loaded with
+  flashy features. However, it is customizable so you can get it to
+  do exactly what you want. Options include:</p>
+<ul>
+<li>Hide the Dock when you activate Isolator (Mac OS X 10.5+ only)</li>
+<li>Customize the background window (including semi-transparency and blur)</li>
+<li>'Hide' background windows, as well as covering them up (they're just
+  covered up by default)</li>
+<li>Customize the shortcut key (normally shift-command-i)</li>
+<li>Disable the menubar icon</li>
+<li>Left-clicking the menubar icon can activate Isolator</li>
+<li>Automatically launch Isolator when you log in</li>
+</ul>
+
+<h2>Get Isolator!</h2>
+
+<p>Download here (for Mac OS X 10.4+): <a href="../download/Isolator-@@VER@@.dmg">Testing version (@@VER@@)</a></p>
+
+<p>Install Isolator by mounting the disk image and dragging Isolator to the
+Applications folder.</p>
+
+<p>Stay up to date by subscribing to RSS appcasts for 
+
+<a type="application/rss+xml"
+href="@@WEBROOT@@/software/isolator/releases.xml">stable versions only</a>
+<img src="@@SHAREDIR@@/rss.png" border="0" alt="RSS"/>
+ or 
+<a type="application/rss+xml"
+href="@@WEBROOT@@/software/isolator/allversions.xml">all new versions
+  (including betas)</a>. 
+<img src="@@SHAREDIR@@/rss.png" border="0" alt="RSS"/></p>
+ 
+<h2>Using Isolator</h2>
+<p>Start Isolator by double-clicking it in your Applications folder.  It will
+  install a small square icon in your menu bar.</p>
+
+<p>To turn Isolator on, click on the menu bar icon and select 'Turn Isolator
+  On' from the menu that appears.  You can turn it off the same way.
+  Alternatively, you can press 'shift-command-i' to turn it on and off.</p>
+
+<p>You can always access the Preferences (even if you've disabled the menu
+  icon) using the hotkey 'shift-command-option-i'.  And, if you customized
+  Isolator so that left-clicking the menu icon activates Isolator, you can
+  still get to the menu using right-click or control-click.</li>
+
+<h2>FAQ</h2>
+
+<ul>
+<li><b>Can Isolator cover up or dim the menu bar?</b> No, this is only possible
+  using dodgy techniques. This feature won't be added to Isolator.</li>
+
+<li><b>I have multiple monitors. How can I make Isolator only affect one of
+      them?</b> There is a hidden preference that makes Isolator only affect
+      the 'main display' (i.e. the one with the menu bar on it). To use this, 
+      quit Isolator. Launch Terminal.app. Type:<pre>defaults write eu.willmore.isolator HideOnMainScreenOnly 1</pre>Quit Terminal and restart
+      Isolator. To undo this later, do the same but with 0 instead of 1.</li>
+
+<li><b>Can I change the Preferences hotkey?</b> You can, with a bit of effort! 
+  Download <a href="../download/KeyCodes.zip">KeyCodes</a>. Click in the
+'Record Shortcut' box. Press your desired keyboard shortcut. Now quit
+Isolator, and run Terminal.app. Then type:
+
+<pre>defaults write eu.willmore.Isolator PrefsHotkey KEYCODE</pre>
+<pre>defaults write eu.willmore.Isolator PrefsHotkeyFlags COCOAFLAGS</pre>
+
+where KEYCODE is the value in the 'Key code' box in KeyCodes, and
+COCOAFLAGS is the value in the 'Cocoa flags' box.
+
+For example, to set the shortcut to shift-apple-J, you would type:
+
+<pre>defaults write eu.willmore.Isolator PrefsHotkey 38</pre>
+<pre>defaults write eu.willmore.Isolator PrefsHotkeyFlags 1179648</pre>
+</li>
+<li><b>Can I use a custom window filter instead of blur etc?</b> Probably, but
+  this is 'advanced use' and you may well end up with bad results. Example
+  usage:
+<pre>defaults write eu.willmore.Isolator CustomFilter CIGaussianBlur</pre>
+<pre>defaults write eu.willmore.Isolator CustomFilterOptionName inputRadius</pre>
+<pre>defaults write eu.willmore.Isolator CustomFilterOptionMultiplier 2</pre>
+See
+the <a href="http://developer.apple.com/library/mac/#documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html">Core
+  Image Reference</a> for details of the filters you can use, but many don't
+work well in this situation.</li>
+
+<li><b>I got confused and messed up these hidden preferences. Help?</b> Delete
+  the file ~/Library/Preferences/eu.willmore.Isolator.plist in your home
+  directory. This will get rid of all your Isolator preferences, and return
+  you to a clean slate</li>
+</ul>
+
+<h2>Known bugs</h2>
+<p>If you experience a crash when using the Preferences window, it is because
+  your preferences have become corrupt. Please send me a copy of the file 
+  ~/Library/Preferences/eu.willmore.Isolator.plist so I can debug the
+  problem. Then delete your own copy. You'll have to set up your preferences
+  again from scratch.</p>
+
+<p>There are some glitches with when Expos&eacute and Spaces are used.</p>
+
+<h2>Contribute!</h2>
+<p>The source code is <a href="https://github.com/beniamino38/isolator">on GitHub</a>.</p>
+
+<h2>Contact &amp; Donations</h2>
+<p>Bug reports, suggestions, etc to bdeb at willmore dot eu. If you like
+  Isolator, please consider <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=bdeb%40willmore%2eeu&amp;item_name=Isolator&amp;no_shipping=2&amp;no_note=1&amp;tax=0&amp;currency_code=GBP&amp;bn=PP%2dDonationsBF&amp;charset=UTF%2d8">donating a few dollars</a>. Donations are greatly appreciated!</p>
+
+@@STATCOUNTER@@
+
+</body></html>

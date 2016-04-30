@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"> 
+ <channel> 
+  <title>Isolator Updates</title> 
+  <link>http://willmore.eu/software/isolator/</link> 
+  <description>All new versions of Isolator</description> 
+  <language>en</language> 
+  <item>
+   <title>1.4beta9</title>
+   <description>No new features. Icon tweaked, memory leaks fixed, various invisible code improvements</description>
+   <pubDate>Fri, 14 Mar 2008 17:39:52 GMT</pubDate>
+   <enclosure sparkle:version="1.4beta9" url="http://willmore.eu/software/download/Isolator-1.4beta9.dmg" length="640358" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>1.5beta1</title>
+   <description>Sparkle support for automatic updates</description>
+   <pubDate>Fri, 14 Mar 2008 22:56:56 GMT</pubDate>
+   <enclosure sparkle:version="1.5beta1" url="http://willmore.eu/software/download/Isolator-1.5beta1.dmg" length="1660808" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>1.5beta2</title>
+   <description>Newer version of Sparkle, drastically slimmed</description>
+   <pubDate>Sat, 15 Mar 2008 01:38:13 GMT</pubDate>
+   <enclosure sparkle:version="1.5beta2" url="http://willmore.eu/software/download/Isolator-1.5beta2.dmg" length="1720026" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>1.5beta3</title>
+   <description>Fix menubar highlight remaining after right-click</description>
+   <pubDate>Sat, 15 Mar 2008 07:39:43 GMT</pubDate>
+   <enclosure sparkle:version="1.5beta3" url="http://willmore.eu/software/download/Isolator-1.5beta3.dmg" length="1720571" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>1.5beta4</title>
+   <description>No longer fails to isolate slow-moving applications on app-switch</description>
+   <pubDate>Tue, 18 Mar 2008 09:22:24 GMT</pubDate>
+   <enclosure sparkle:version="1.5beta4" url="http://willmore.eu/software/download/Isolator-1.5beta4.dmg" length="1724318" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>1.5beta6</title>
+   <description>Add ability to hide the dock and to check for updates within the Preferences window. Add hidden preferences for preference window hotkey.</description>
+   <pubDate>Wed, 19 Mar 2008 21:53:39 GMT</pubDate>
+   <enclosure sparkle:version="1.5beta6" url="http://willmore.eu/software/download/Isolator-1.5beta6.dmg" length="1742628" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.0</title>
+   <description>Fix memory leaks</description>
+   <pubDate>Tue, 25 Mar 2008 21:13:37 GMT</pubDate>
+   <enclosure sparkle:version="3.0" url="http://willmore.eu/software/download/Isolator-3.0.dmg" length="1742994" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.1beta</title>
+   <description>Add ability to blur background windows</description>
+   <pubDate>Thu, 15 May 2008 17:03:35 BST</pubDate>
+   <enclosure sparkle:version="3.1beta" url="http://willmore.eu/software/download/Isolator-3.1beta.dmg" length="1823301" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.2</title>
+   <description>Enable blurring of background windows as well as (or instead of) covering them up</description>
+   <pubDate>Tue, 03 Jun 2008 22:07:07 BST</pubDate>
+   <enclosure sparkle:version="3.2" url="http://willmore.eu/software/download/Isolator-3.2.dmg" length="1822268" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.3</title>
+   <description>Restore compatibility with OS X 10.4 (Tiger)</description>
+   <pubDate>Wed, 04 Jun 2008 18:09:22 BST</pubDate>
+   <enclosure sparkle:version="3.3" url="http://willmore.eu/software/download/Isolator-3.3.dmg" length="1823151" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.31beta</title>
+   <description>Ensure that 'Check for updates' box always comes to the front, preventing greyed-out menu items. Fix minor logic problem with Dock hiding.</description>
+   <pubDate>Thu, 05 Jun 2008 15:01:59 BST</pubDate>
+   <enclosure sparkle:version="3.31beta" url="http://willmore.eu/software/download/Isolator-3.31beta.dmg" length="1831903" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.32beta</title>
+   <description>Experimental support for new ways to obscure background windows -- pointillize, crystallize, bloom</description>
+   <pubDate>Thu, 05 Jun 2008 16:40:25 BST</pubDate>
+   <enclosure sparkle:version="3.32beta" url="http://willmore.eu/software/download/Isolator-3.32beta.dmg" length="1859585" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.33beta</title>
+   <description>Improve login item code</description>
+   <pubDate>Thu, 05 Jun 2008 18:26:17 BST</pubDate>
+   <enclosure sparkle:version="3.33beta" url="http://willmore.eu/software/download/Isolator-3.33beta.dmg" length="2191066" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.34beta</title>
+   <description>Better interactions with Spaces and Expose.</description>
+   <pubDate>Fri, 06 Jun 2008 08:54:39 BST</pubDate>
+   <enclosure sparkle:version="3.34beta" url="http://willmore.eu/software/download/Isolator-3.34beta.dmg" length="2195393" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.35beta</title>
+   <description>Option to suspend Isolator when the Finder is frontmost (allows you to see desktop icons when using the Finder)</description>
+   <pubDate>Fri, 06 Jun 2008 13:18:11 BST</pubDate>
+   <enclosure sparkle:version="3.35beta" url="http://willmore.eu/software/download/Isolator-3.35beta.dmg" length="" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.36beta</title>
+   <description>Better window effects and compositing</description>
+   <pubDate>Fri, 06 Jun 2008 19:48:33 BST</pubDate>
+   <enclosure sparkle:version="3.36beta" url="http://willmore.eu/software/download/Isolator-3.36beta.dmg" length="2193859" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.37beta</title>
+   <description>Bring back the bloom effect</description>
+   <pubDate>Fri, 06 Jun 2008 21:12:08 BST</pubDate>
+   <enclosure sparkle:version="3.37beta" url="http://willmore.eu/software/download/Isolator-3.37beta.dmg" length="2196998" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.38beta</title>
+   <description>Remove glitchy hexagons effect; disable filters on machines without hardware CoreImage acceleration</description>
+   <pubDate>Mon, 09 Jun 2008 10:21:20 BST</pubDate>
+   <enclosure sparkle:version="3.38beta" url="http://willmore.eu/software/download/Isolator-3.38beta.dmg" length="2196624" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.39beta</title>
+   <description>Fix problems on PPC/10.5.3.</description>
+   <pubDate>Tue, 10 Jun 2008 10:56:40 BST</pubDate>
+   <enclosure sparkle:version="3.39beta" url="http://willmore.eu/software/download/Isolator-3.39beta.dmg" length="2197625" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.40beta</title>
+   <description>Code tidying; added informative floating window on first run</description>
+   <pubDate>Fri, 13 Jun 2008 14:53:44 BST</pubDate>
+   <enclosure sparkle:version="3.40beta" url="http://willmore.eu/software/download/Isolator-3.40beta.dmg" length="2245318" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.41beta</title>
+   <description>Fix localization and ability to detect changes to screen configuration</description>
+   <pubDate>Sat, 07 Mar 2009 11:50:27 GMT</pubDate>
+   <enclosure sparkle:version="3.41beta" url="http://willmore.eu/software/download/Isolator-3.41beta.dmg" length="2314710" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.42beta</title>
+   <description>Sparkle update</description>
+   <pubDate>Sat, 07 Mar 2009 16:00:50 GMT</pubDate>
+   <enclosure sparkle:version="3.42beta" sparkle:dsaSignature="MCwCFGmulFnVvwJDcmy/k37XystDMQuAAhQfznc1l82tF2bTJlWcXX5hqAEfXA==" url="http://willmore.eu/software/download/Isolator-3.42beta.dmg" length="1575548" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.43beta</title>
+   <description>Smoother transitions; fewer glitches</description>
+   <pubDate>Mon, 09 Mar 2009 19:41:53 GMT</pubDate>
+   <enclosure sparkle:version="3.43beta" sparkle:dsaSignature="MC0CFFoN0Db86j//XWUeDpwf7CUQQCfZAhUA5plizWIqcB2ynreEbtdmNWyvu8s=" url="http://willmore.eu/software/download/Isolator-3.43beta.dmg" length="1574351" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.44beta</title>
+   <description>Sparkle test</description>
+   <pubDate>Mon, 09 Mar 2009 20:00:45 GMT</pubDate>
+   <enclosure sparkle:version="3.44beta" sparkle:dsaSignature="MCwCFCe+udTFtX67h51yaVAIci/5XpOYAhRS8m2BYzDWWxUXqOhixcQkx2C0QA==" url="http://willmore.eu/software/download/Isolator-3.44beta.dmg" length="1574366" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.45beta</title>
+   <description>Codesign</description>
+   <pubDate>Mon, 09 Mar 2009 20:59:11 GMT</pubDate>
+   <enclosure sparkle:version="3.45beta" sparkle:dsaSignature="MC0CFAouvqIhXCAHEoLTqtdHw//LhvUDAhUAiRXNhW0xJrrTF9iWBv1epeAezy4=" url="http://willmore.eu/software/download/Isolator-3.45beta.dmg" length="1589472" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.46beta</title>
+   <description>Fix filter glitches (mode 0x2001; remove pixellate -- still available through hidden pref)</description>
+   <pubDate>Tue, 10 Mar 2009 09:51:34 GMT</pubDate>
+   <enclosure sparkle:version="3.46beta" sparkle:dsaSignature="MC4CFQDFV8HmrFmo++otWKwVGdhrJGI9SwIVALvrxFzxRaIGAlzBwUMwzMjgWafq" url="http://willmore.eu/software/download/Isolator-3.46beta.dmg" length="1588667" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.47beta</title>
+   <description>Fix 'no filter' option</description>
+   <pubDate>Tue, 10 Mar 2009 14:34:39 GMT</pubDate>
+   <enclosure sparkle:version="3.47beta" sparkle:dsaSignature="MC0CFQCC1EixSTcLEWQej0ehqdwQYmzMvwIUTo/KNqJIQO8ComXa/kMFlGXNubE=" url="http://willmore.eu/software/download/Isolator-3.47beta.dmg" length="1588893" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.48beta</title>
+   <description>Multiple minor fixes</description>
+   <pubDate>Sun, 15 Mar 2009 17:34:36 GMT</pubDate>
+   <enclosure sparkle:version="3.48beta" sparkle:dsaSignature="MCwCFBhapaj1/0yDepXHw9tkvRGKg/IYAhQcUV4oQmygQVdwWgCS5vLMDlHGFQ==" url="http://willmore.eu/software/download/Isolator-3.48beta.dmg" length="1589738" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.0</title>
+   <description>Added blur and other effects to background windows; suspend Isolator when Finder is frontmost; multiple bug fixes.</description>
+   <pubDate>Wed, 25 Mar 2009 14:22:18 GMT</pubDate>
+   <enclosure sparkle:version="4.0" sparkle:dsaSignature="MCwCFB6go/nSqYY2qtcIhYiQ0cbkHUZoAhRI6dlRybg8m7uiokB5nUGBHAtQIw==" url="http://willmore.eu/software/download/Isolator-4.0.dmg" length="1588716" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.02beta</title>
+   <description>Update for Snow Leopard; add desaturate effect</description>
+   <pubDate>Fri, 04 Sep 2009 10:47:42 BST</pubDate>
+   <enclosure sparkle:version="4.02beta" sparkle:dsaSignature="MC0CFQCz/tC4qywZaUzrbX8yCZEUTiXX3wIUXejXXCIm9hP3gUHBHz5m/yzfi/Q=" url="http://willmore.eu/software/download/Isolator-4.02beta.dmg" length="2109904" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.03beta</title>
+   <description>Fix glitch with selection of desaturate filter</description>
+   <pubDate>Fri, 04 Sep 2009 15:38:48 BST</pubDate>
+   <enclosure sparkle:version="4.03beta" sparkle:dsaSignature="MC4CFQDJj3qCB5OR4FldzKQ8bezjiWBVEQIVALmlV9S8RA1AvCeQrtF1HHejEe4v" url="http://willmore.eu/software/download/Isolator-4.03beta.dmg" length="1502110" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.04beta</title>
+   <description>unreleased</description>
+   <pubDate>Fri, 04 Sep 2009 15:42:00 BST</pubDate>
+   <enclosure sparkle:version="4.04beta" sparkle:dsaSignature="MC0CFEmHu65IVWPfGW65zc+Ddwq2GQQfAhUAhrmJIQ9iE0zegymI6pxtq3uwLX4=" url="http://willmore.eu/software/download/Isolator-4.04beta.dmg" length="1502009" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.1beta</title>
+   <description>Snow Leopard support, desaturate filter</description>
+   <pubDate>Thu, 17 Sep 2009 17:05:13 BST</pubDate>
+   <enclosure sparkle:version="4.1beta" sparkle:dsaSignature="MC4CFQCMFLVqCTQ389FVGKWfJwY8RtfrbQIVAKjcv66wkRae8j8XnjIzfldo9RM9" url="http://willmore.eu/software/download/Isolator-4.1beta.dmg" length="1502016" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.2</title>
+   <description>Snow Leopard support, desaturate filter</description>
+   <pubDate>Thu, 17 Sep 2009 17:06:10 BST</pubDate>
+   <enclosure sparkle:version="4.2" sparkle:dsaSignature="MC0CFChDA0a3uOb8lIRrJtcqAokE7Y9XAhUA1QXQ+p0H/VE/N3f1cFIag7rYSVo=" url="http://willmore.eu/software/download/Isolator-4.2.dmg" length="1502015" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.3</title>
+   <description>Fix Sparkle problems. NB This version is not compatible with OS X 10.4 -- I hope the next version will be.</description>
+   <pubDate>Thu, 17 Sep 2009 19:50:04 BST</pubDate>
+   <enclosure sparkle:version="4.3" sparkle:dsaSignature="MC0CFH48VYwrjjePlR9pfHVmtphvfqS2AhUAwEky8Hz1D7ESZC8BdjatUbTNJAk=" url="http://willmore.eu/software/download/Isolator-4.3.dmg" length="1502481" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.4</title>
+   <description>Fix auto-update problems. NB This version is not compatible with 10.4 -- hopefully the next version will be.</description>
+   <pubDate>Thu, 17 Sep 2009 19:55:37 BST</pubDate>
+   <enclosure sparkle:version="4.4" sparkle:dsaSignature="MCwCFCinWSSF9IOohykS3yO+3qLIIfk2AhRAz3GzSelEyrX0utWeWx0BgF8CPA==" url="http://willmore.eu/software/download/Isolator-4.4.dmg" length="1502494" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.5beta</title>
+   <description>Reenable 10.4 support.</description>
+   <pubDate>Thu, 17 Sep 2009 21:26:53 BST</pubDate>
+   <enclosure sparkle:version="4.5beta" sparkle:dsaSignature="MC4CFQCqAFuPBJYORi5pfdJqYUlYZgPfhgIVAOFvDDRD94/RaMUuTJjQ38dmlN1j" url="http://willmore.eu/software/download/Isolator-4.5beta.dmg" length="1501313" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.74beta</title>
+   <description>Applescript support, fix bug when hiding only on main screen</description>
+   <pubDate>Mon, 07 Feb 2011 22:06:55 GMT</pubDate>
+   <enclosure sparkle:version="4.74beta" sparkle:dsaSignature="MCwCFEQbx08WPiV5/hAbWm6rN4zWM4mHAhQ3xfA18s4o1C+z5Y+5ZFJRBMROUQ==" url="http://willmore.eu/software/download/Isolator-4.74beta.dmg" length="787501" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.75beta</title>
+   <description>Fix code signing</description>
+   <pubDate>Thu, 10 Feb 2011 11:10:46 GMT</pubDate>
+   <enclosure sparkle:version="4.75beta" sparkle:dsaSignature="MC4CFQCJeKLjjSjUGkjF0/KXQ8Pl6v4mRgIVAMKsbYfkPAnqb52CTkE0fgGQwgDU" url="http://willmore.eu/software/download/Isolator-4.75beta.dmg" length="1505906" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.76beta</title>
+   <description>Fix code signing</description>
+   <pubDate>Thu, 10 Feb 2011 11:17:35 GMT</pubDate>
+   <enclosure sparkle:version="4.76beta" sparkle:dsaSignature="MCwCFHajrSKPLskBIkwZj77WLoJ8HyTBAhR2uNteKBVXPz0Cnpik4d8qSByhgw==" url="http://willmore.eu/software/download/Isolator-4.76beta.dmg" length="1505875" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.9beta</title>
+   <description>Update for Lion</description>
+   <pubDate>Mon, 01 Aug 2011 15:05:53 BST</pubDate>
+   <enclosure sparkle:version="4.9beta" sparkle:dsaSignature="" url="http://willmore.eu/software/download/Isolator-4.9beta.dmg" length="" type="application/octet-stream"/>
+  </item>

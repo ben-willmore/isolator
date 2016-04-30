@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"> 
+ <channel> 
+  <title>Isolator Releases</title> 
+  <link>http://willmore.eu/software/isolator/</link> 
+  <description>New releases of Isolator</description> 
+  <language>en</language>
+  <item>
+   <title>1.0</title>
+   <description>First release</description>
+   <pubDate>Fri, 11 Feb 2007 14:04:53 GMT</pubDate>
+   <enclosure sparkle:version="1.0" url="http://willmore.eu/software/download/Isolator-1.0.dmg" length="215155" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.0</title>
+   <description>Since v1.0: Support for Leopard and multiple monitors. Windows are no longer hidden by default, just covered up. Dock can be hidden. Various UI improvements and bugfixes.</description>
+   <pubDate>Tue, 25 Mar 2008 21:13:37 GMT</pubDate>
+   <enclosure sparkle:version="3.0" url="http://willmore.eu/software/download/Isolator-3.0.dmg" length="1742994" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.2</title>
+   <description>Enable blurring of background windows as well as (or instead of) covering them up</description>
+   <pubDate>Tue, 03 Jun 2008 22:07:07 BST</pubDate>
+   <enclosure sparkle:version="3.2" url="http://willmore.eu/software/download/Isolator-3.2.dmg" length="1822268" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>3.3</title>
+   <description>Restore compatibility with OS X 10.4 (Tiger)</description>
+   <pubDate>Wed, 04 Jun 2008 18:09:22 BST</pubDate>
+   <enclosure sparkle:version="3.3" url="http://willmore.eu/software/download/Isolator-3.3.dmg" length="1823151" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.0</title>
+   <description>Added blur and other effects to background windows; suspend Isolator when Finder is frontmost; multiple bug fixes.</description>
+   <pubDate>Wed, 25 Mar 2009 14:22:18 GMT</pubDate>
+   <enclosure sparkle:version="4.0" sparkle:dsaSignature="MC0CFCE5Dtou+LXwlK/thw1RVyXDD3GtAhUA3CVrZ8Tc/xEuRj3OdQ4ITBUD01c=" url="http://willmore.eu/software/download/Isolator-4.0.dmg" length="1588716" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.2</title>
+   <description>Snow Leopard support, desaturate filter</description>
+   <pubDate>Thu, 17 Sep 2009 17:06:10 BST</pubDate>
+   <enclosure sparkle:version="4.2" sparkle:dsaSignature="MCwCFAfvJHsVIgumc14fNVZLfYdXL9CPAhQ6B1pRmwLuZNfF9dv4DU8JpnNgYw==" url="http://willmore.eu/software/download/Isolator-4.2.dmg" length="1502015" type="application/octet-stream"/>
+  </item>
+  <item>
+   <title>4.3</title>
+   <description>Fix Sparkle problems. NB This version is not compatible with OS X 10.4 -- I hope the next version will be.</description>
+   <pubDate>Thu, 17 Sep 2009 19:50:04 BST</pubDate>
+   <enclosure sparkle:version="4.3" sparkle:dsaSignature="MC0CFQDd2rjF5icPQjPR9XVCR+B6fBHqjQIURi3ooKbFcLXD1f/h9Szo5czaXGA=" url="http://willmore.eu/software/download/Isolator-4.3.dmg" length="1502481" type="application/octet-stream"/>
+  </item>

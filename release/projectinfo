@@ -1,0 +1,5 @@
+# version 1.0
+PROJECT=Isolator
+LOCALWEBROOT=~/Sites/willmore.eu
+WEBROOT=http://willmore.eu
+VER=4.99beta

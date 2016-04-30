@@ -1,5 +1,7 @@
 build/
-release/
 Isolator.xcodeproj/project.xcworkspace/
 Isolator.xcodeproj/xcuserdata/
 Isolator.xcodeproj/ben.pbxuser
+.DS_Store
+*~
+release/releases

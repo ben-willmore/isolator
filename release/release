@@ -1,0 +1,22 @@
+# for a new application, change:
+# * ./projectinfo
+# * the webpage in templates/html-template
+# * the text in image/dmg-image{.ai|.png} (if any)
+
+source ./projectinfo
+
+codeprefix=/Volumes/External/projects
+${codeprefix}/willmore.eu/scripts/updatechangelog ../ChangeLog $VER
+${codeprefix}/willmore.eu/scripts/updatehtml `pwd`
+${codeprefix}/willmore.eu/scripts/updatedmg `pwd`
+${codeprefix}/willmore.eu/scripts/updaterss `pwd` releases.xml FALSE
+${codeprefix}/willmore.eu/scripts/updaterss `pwd` allversions.xml TRUE
+${codeprefix}/willmore.eu/scripts/updateweb `pwd`
+
+if [[ -d html-tmp ]]; then
+  rm -r html-tmp
+fi
+
+if [[ -e imagescript-tmp ]]; then
+  rm imagescript-tmp
+fi

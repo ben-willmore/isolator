@@ -1,0 +1,24 @@
+tell application "Finder"
+	set f to disk "@@DISKNAME@@"
+	open f
+	set w to container window of f
+	set bounds of w to {0,50,518,470}
+	set toolbar visible of w to false
+	set statusbar visible of w to false
+	set current view of w to icon view
+	set options to icon view options of w
+	set arrangement of options to not arranged
+	set bgFile to POSIX file "/Volumes/@@DISKNAME@@/.image/dmg-image.png"
+	set background picture of options to bgFile
+	set icon size of options to 88
+        set text size of options to 14
+	set label position of options to bottom
+        set position of item "Isolator.app" of f to {146, 130}
+        set position of item "Applications" of f to {370, 130}
+        set position of item "Docs" of f to {260, 318}
+end tell
+
+tell application "System Events" to tell process "Finder" to tell menu bar 1 to tell menu bar item "Window" to tell menu "Window" to click menu item "Zoom"
+tell application "System Events" to tell process "Finder" to tell menu bar 1 to tell menu bar item "Window" to tell menu "Window" to click menu item "Zoom"
+
+delay 5
