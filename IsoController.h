@@ -17,7 +17,7 @@
 #import "IsoStatusItemView.h"
 //#import "MAAttachedWindow.h"
 
-@interface IsoController : NSObject
+@interface IsoController : NSObject <NSMenuDelegate>
 {
 	StartupItemController* startupItemController;
 	NSMutableArray* blackWindows;

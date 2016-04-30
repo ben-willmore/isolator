@@ -290,11 +290,11 @@ OSStatus hotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *
 	[[statusItem view] setNeedsDisplay:YES];
 	[statusItem setHighlightMode:YES];
 	
-	if (![defaults boolForKey:@"InfoBoxHasBeenShown"]) {
-		theFrame = [[siView window] frame];
-		NSPoint pt = NSMakePoint(NSMidX(theFrame), NSMinY(theFrame));
-		//[self showInfoBoxAtPoint:pt];
-	}
+//	if (![defaults boolForKey:@"InfoBoxHasBeenShown"]) {
+//		theFrame = [[siView window] frame];
+//		NSPoint pt = NSMakePoint(NSMidX(theFrame), NSMinY(theFrame));
+//		[self showInfoBoxAtPoint:pt];
+//	}
 }
 
 -(NSStatusItem*) getStatusItem
